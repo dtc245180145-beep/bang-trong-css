@@ -1,0 +1,102 @@
+
+/* Định dạng chung */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 30px;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #1f4e79;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #666;
+}
+
+/* Đường viền và kích thước bảng */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #333;
+}
+
+/* Định dạng ô tiêu đề và ô dữ liệu */
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    height: 50px;
+}
+
+/* Hàng tiêu đề */
+th {
+    background-color: #1f4e79;
+    color: white;
+    height: 55px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Nội dung bảng */
+td {
+    background-color: #fff;
+    color: #333;
+    vertical-align: middle;
+}
+
+/* Tô màu xen kẽ các hàng */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(even) td {
+    background-color: #f2f2f2;
+}
+
+/* Hiệu ứng khi di chuột */
+tbody tr:hover td {
+    background-color: #dceeff;
+}
+
+/* Hiển thị tốt trên điện thoại */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 10px;
+        overflow-x: auto;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
